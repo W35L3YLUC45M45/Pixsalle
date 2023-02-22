@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "glamourFont";
+    src: url('../fonts/GlamourBright-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "glamourGirlFont";
+    src: url('../fonts/Glamour Girls Personal Use.ttf') format('truetype');
+}
+
+html{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+}
+
+body{
+    display: flex;
+    margin: 0px;
+    background-image: url('../media/gif/aurora-sky.gif');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.form-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(241, 241, 241);
+    height: 27.01rem;
+    background: rgb(0 0 0 / 50%);
+}
+
+h1{
+    font-family: glamourGirlFont;
+    text-shadow: 4px 5px 3px black;
+    margin: 0em;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.set{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5em;
+}
+
+.set-1{
+    margin-right: 2rem;
+}
+
+.email-section{
+    margin-top: 1.5rem;
+}
+
+.set-2{
+    margin-left: 2rem;
+}
+
+.photo-section{
+    margin-top: 1.5rem;
+}
+
+form > div > div > div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=text], input[type=tel]{
+    font-family: 'Roboto', sans-serif;
+    width: 23em;
+    height: 2.25em;
+    font-size: 18px;
+    border-radius: 2em;
+    border-style: solid;
+    border-width: 3px 3px;
+    border-color: white;
+    color: white;
+    font-weight: 600;
+    background: #00000057;
+    text-align: center;
+}
+
+input[name="email"]{
+    cursor: no-drop;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    width: 23em;
+    height: 2.25em;
+    font-size: 18px;
+    border-radius: 2em;
+    border-style: solid;
+    border-width: 3px 3px;
+    border-color: white;
+    color: white;
+    font-weight: 600;
+    background: #00000057;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.custom-file-upload:hover{
+    background: white;
+    color: #000000;
+    border-color: #000000;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input[type=text]:focus, input[type=tel]:focus{
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+.error{
+    color: red;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.buttons-section{
+    display: flex;
+    margin-top: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-upd{
+    width: 7em !important;
+    border-color: white;
+    color: white;
+    margin-bottom: 0.75em;
+    margin-top: 0.75em;
+    transition: width .25s;
+}
+
+.info-upd:hover {
+    background: pink;
+    color: #000000;
+    border-color: #000000;
+    cursor: pointer;
+    width: 10em !important;
+}
+
+.passw-option{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: pink;
+}

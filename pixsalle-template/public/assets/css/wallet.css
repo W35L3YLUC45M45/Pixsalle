@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "glamourFont";
+    src: url('../fonts/GlamourBright-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "glamourGirlFont";
+    src: url('../fonts/Glamour Girls Personal Use.ttf') format('truetype');
+}
+
+html{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    margin: 0px;
+    background-image: url('../media/gif/cherry-blossom-sunset.gif');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.form-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+h1{
+    font-family: glamourGirlFont;
+    margin-bottom: 0.25rem;
+    color: white;
+    text-shadow: 1px 1px 10px black, 1px 1px 10px black, 1px 1px 10px black, 1px 1px 10px black;
+}
+
+.money-presentation{
+    display: flex;
+    flex-direction: column;
+    background: #000000b5;
+    color: white;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 22rem;
+    box-shadow: 0em 0em 20px 6px white;
+}
+
+.user{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.amount{
+    font-size: 4rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.money-amount{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+}
+
+label{
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1em;
+    color: white;
+    text-shadow: 1px 1px 10px black, 1px 1px 10px black, 1px 1px 10px black, 1px 1px 10px black;
+}
+
+input[type=number]{
+    width: 23em;
+    height: 1.5em;
+    font-size: 18px;
+    border-radius: 2em;
+    border-top-right-radius: 0em;
+    border-bottom-right-radius: 0em;
+    border-style: solid;
+    border-width: 4px 4px;
+    border-color: black;
+    color: white;
+    font-weight: 600;
+    background: #00000080;
+    text-align: center;
+}
+
+.add{
+    border-color: white;
+    background: rgba(0, 0, 0, 0.70) !important;
+    color: white;
+    margin-bottom: 0.75em;
+    margin-top: 0.75em;
+    transition: width .25s;
+    width: 8em !important;
+}
+
+.add:hover{
+    background: pink !important;
+    color: #000000;
+    border-color: #000000;
+    cursor: pointer;
+    width: 10em !important;
+}

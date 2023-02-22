@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "glamourFont";
+    src: url('../fonts/GlamourBright-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "glamourGirlFont";
+    src: url('../fonts/Glamour Girls Personal Use.ttf') format('truetype');
+}
+
+html{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+}
+
+body{
+    display: flex;
+    margin: 0px;
+    background-image: url('../media/gif/anime-starry-night-sky.gif');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.body-content{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-family: 'glamourGirlFont';
+    text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black;
+}
+
+.img-info{
+    background: rgb(0 0 0 / 70%);
+    display: flex;
+    align-items: center;
+    width: 17rem;
+    height: 17rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-info > p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img-container{
+    width: 90rem;
+    height: 90rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0 0 0 / 70%);
+}
+
+.img-container > img{
+    width: 15rem;
+    height: auto;
+}
+
+.img-container > img:hover{
+
+}

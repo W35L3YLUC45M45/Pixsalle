@@ -1,0 +1,14 @@
+- platform where students can freely showcase their work and express themselves through photography
+(camera)
+
+- This web application will allow them to be members
+(exclusive membership)
+
+- explore photos posted by other photographers and picture editors
+(photo collection)
+
+- view resources that they can use to improve their work and contribute to the knowledge sharing within the community through blogs
+(discussion)
+
+- develop their skills and inspire them to be professional photographers one day
+(photographer person)

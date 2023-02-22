@@ -1,0 +1,258 @@
+/**************** HEADER ELEMENTS ****************/
+.header-fill{
+    display: flex;
+    width: 100%;
+    height: 12%;
+    background: rgb(0 0 0);
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.left-h{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-h p{
+    font-family: glamourFont;
+    font-size: 49px;
+    margin: 0px;
+    margin-left: 0.6em;
+    margin-bottom: 5px;
+    color: pink;
+    user-select:none;
+}
+
+.social-media-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 4.25px;
+    grid-row-gap: 0px;
+    margin-top: 4.5px;
+}
+
+.inst-link{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.twit-link{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.pint-link{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.tmbl-link{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.left-h > div > a > img{
+    width: 25px;
+}
+
+.center-h p{
+    font-size: 1.5em;
+    margin-top: 5px;
+    font-family: glamourGirlFont;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.right-h-in{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.right-h-in > p{
+    margin: 0px;
+    color: white;
+    font-size: 19px;
+    width: 140px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: pink;
+}
+
+input[type=submit]{
+    font-family: 'Roboto', sans-serif;
+    width: 6em;
+    height: 2.25em;
+    font-size: 18px;
+    border-radius: 2em;
+    border-style: solid;
+    border-width: 3px 3px;
+    font-weight: 600;
+    background: transparent;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.sign-in-butt{
+    margin-left: 0.5em;
+    border-color: white;
+    color: white;
+}
+
+.sign-in-butt:hover{
+    background: white;
+    color: #000000;
+    border-color: #000000;
+}
+
+.sign-up-butt{
+    margin-right: 0.5em;
+    border-color: pink;
+    color: pink;
+}
+
+.sign-up-butt:hover{
+    background: pink;
+    color: black;
+    border-color: black;
+}
+
+.sign-out-butt{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-color: white;
+    color: white;
+}
+
+.sign-out-butt:hover{
+    background: white;
+    color: #000000;
+    border-color: #000000;
+}
+
+.subheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #efefef;
+    width: 100%;
+    height: 4em;
+}
+
+.subheader > a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    transition: transform .25s;
+}
+
+.subheader > a:hover {
+    transform: scale(0.90);
+    font-weight: 600;
+}
+
+.subheader > a > *{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 20px;
+    font-family: glamourGirlFont;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.wallet > p{
+    margin-top: 10px;
+}
+
+.membership > p{
+    margin-top: 5px;
+}
+
+.explore > p{
+    margin-top: 5px;
+}
+
+.portfolio > p{
+    margin-top: 5px;
+}
+
+.blogs > p{
+    margin-top: 5px;
+}
+
+
+/**************** FOOTER ELEMENTS ****************/
+footer{
+    display: flex;
+    background: black;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.copyright > p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75em;
+}
+
+.copy{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.sitemap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sitemap > p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75em;
+    margin-bottom: 0px;
+}
+
+iframe{
+    border: 0;
+    width: 250px;
+    height: 5em;
+}
+
+.logo > p{
+    font-family: glamourFont;
+    font-size: 4.5em;
+    margin: 0px;
+    margin-left: 0.6em;
+    margin-bottom: 5px;
+    color: pink;
+    user-select:none;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-media a{
+    width: 2.5em;
+    height: auto;
+}
+
+.social-media > a{
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+}

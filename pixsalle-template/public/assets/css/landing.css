@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "glamourFont";
+    src: url('../fonts/GlamourBright-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "glamourGirlFont";
+    src: url('../fonts/Glamour Girls Personal Use.ttf') format('truetype');
+}
+
+html{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+}
+
+body{
+    display: flex;
+    margin: 0px;
+    background-image: url('../media/gif/evening-paddy-fields.gif');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.panel-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.panel-container > div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 94%;
+    height: 50%;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    margin-left: 3em;
+    margin-right: 3em;
+    justify-content: space-around;
+}
+
+.info-1-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.panel-container > div > img{
+    min-height: 100%;
+    max-width: 17%;
+    box-shadow: 0em 0em 20px 4px black;
+    border-radius: 30em;
+}
+
+.info-1-title{
+    font-family: glamourFont;
+    font-size: 10em;
+    color: pink;
+    text-shadow: 0px 0px 20px black, 0px 0px 20px black;
+    margin: 0em;
+}
+
+.info-1-description{
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 29em;
+    font-family: glamourGirlFont;
+    text-shadow: 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black;
+}
+
+.info-set > div{
+    width: 27rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-set > div > p{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black;
+    font-size: 22px;
+}
+
+.info-set > div > img{
+    box-shadow: 0em 0em 20px 4px black;
+    border-radius: 10em;
+}
+
+#photo{
+    max-width: 61%;
+    max-height: 61%;
+    text-shadow: 0em 0em 20px 4px black;
+    border-radius: 10em;
+}
+
+#member{
+    max-width: 61%;
+    max-height: 61%;
+    text-shadow: 0em 0em 20px 4px black;
+    border-radius: 10em;
+}
+
+#chat{
+    max-width: 60%;
+    max-height: 60%;
+    text-shadow: 0em 0em 20px 4px black;
+    border-radius: 10em;
+}
+
+.info-5 > p{
+    text-align: center;
+    color: white;
+    font-family: 'glamourGirlFont';
+    text-shadow: 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black;
+    font-size: 25px;
+    width: 36rem;
+}
