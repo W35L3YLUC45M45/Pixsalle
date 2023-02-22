@@ -1,3 +1,5 @@
+![My Image](media-captures/hub.jpg)
+
 # PixSalle
 
 The Student Council of La Salle saw that a lot of students are passionate about photography. They have posted their
