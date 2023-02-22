@@ -1,0 +1,39 @@
+{% extends "base.twig" %}
+
+{% block title %}PixSalle{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="assets/css/landing.css"/>
+{% endblock %}
+
+{% block content %}
+    <main class="panel-container">
+        <div class="info-1">
+            <img id="cam" src="assets/icons/camera-2.svg" alt="no-svg-icon-found">
+            <div class="info-1-body">
+                <p class="info-1-title">PixSalle</p>
+                <p class="info-1-description">Most modern platform where you can freely showcase your work and express yourself through photography</p>
+            </div>
+            <img id="cam" src="assets/icons/camera.svg" alt="no-svg-icon-found">
+        </div>
+        <div class="info-set">
+            <div class="info-2">
+                <img id="photo" src="assets/icons/photo.svg" alt="no-svg-icon-found">
+                <p>Explore photos posted by other photographers and picture editors</p>
+            </div>
+            <div class="info-3">
+                <img id="member" src="assets/icons/membership.svg" alt="no-svg-icon-found">
+                <p>Become a member and obtain exclusive benefits for commercializing your photos </p>
+            </div>
+            <div class="info-4">
+                <img id="chat" src="assets/icons/chat.svg" alt="no-svg-icon-found">
+                <p>View resources to improve your work and contribute to the knowledge sharing within the community</p>
+            </div>
+        </div>
+        <div class="info-5">
+            <img id="f-photo" src="assets/icons/male-photographer.svg" alt="no-svg-icon-found">
+            <p>Develop your skills and aspire to become a professional photographer one day</p>
+            <img id="m-photo" src="assets/icons/female-photographer.svg" alt="no-svg-icon-found">
+        </div>
+    </main>
+{% endblock %}

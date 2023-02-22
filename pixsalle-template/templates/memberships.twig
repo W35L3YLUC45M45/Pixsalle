@@ -1,0 +1,43 @@
+{% extends "base.twig" %}
+
+{% block title %}Membership | PixSalle{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="../assets/css/memberships.css"/>
+{% endblock %}
+
+{% block content %}
+    <div class="form-body">
+    <h1>Memberships</h1>
+    <div class="composition">
+        <div class="cool-bg">
+            <p>Cool</p>
+            <ul>
+                <li>Free Features</li>
+                <li>View Albums</li>
+                <li>Access to blog section interaction</li>
+            </ul>
+        </div>
+        <div class="sw-section">
+            <form action="" method="POST">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </form>
+        </div>
+        <div class="active-bg">
+            <p>Active</p>
+            <ul>
+                <li>Free Features</li>
+                <li>View Albums</li>
+                <li>Access to blog section interaction</li>
+                <div class="excl">
+                    <p>***EXCLUSIVE***</p>
+                    <li>Paid additional exclusive features</li>
+                    <li>Create Albums (for €2)</li>
+                </div>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

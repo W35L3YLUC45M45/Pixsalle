@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}{% endblock %}
+    {% block base_styles %}
+      <link rel="stylesheet" href="../assets/css/base.css"/>
+    {% endblock %}
+    {% block styles %}
+    {% endblock %}
+  </head>
+
+  <body>
+
+    {% block header %}
+      <header class="header-fill">
+        <div class="left-h">
+          <div class="social-media-container">
+              <a class="inst-link" href="https://www.youtube.com/watch?v=iik25wqIuFo" target="_blank"><img src="../assets/icons/instagram.svg" alt="no-svg-icon-found"></a>
+              <a class="twit-link" href="https://www.youtube.com/watch?v=KnHmoA6Op1o" target="_blank"><img  src="../assets/icons/twitter.svg" alt="no-svg-icon-found"></a>
+              <a class="pint-link" href="https://www.youtube.com/watch?v=2tRIjRVcHcQ" target="_blank"><img  src="../assets/icons/pinterest.svg" alt="no-svg-icon-found"></a>
+              <a class="tmbl-link" href="https://www.youtube.com/watch?v=eSa2zL-luUI" target="_blank"><img  src="../assets/icons/tumblr.svg" alt="no-svg-icon-found"></a>
+          </div>
+          <p>PixSalle</p>
+        </div>
+        <div class="center-h">
+          <p>Welcome to the future of Photography business</p>
+        </div>
+        {% if not user.state %}
+          <div class="right-h-in">  
+            <p>Welcome home, username{{ user.name }}</p>
+            <input class="sign-out-butt" type="submit" value="Sign-out">
+          </div>
+        {% else %}
+          <div class="right-h-out">  
+            <input class="sign-up-butt" type="submit" value="Sign-up">
+            <input class="sign-in-butt" type="submit" value="Sign-in">
+          </div>
+        {% endif %}
+      </header>
+    {% endblock %}
+
+    {% block subheader %}
+      {% if not user.state %}
+        <header class="subheader">
+          <a class="profile" href="https://media1.giphy.com/avatars/moodman/ulSuW7fRIM5X.gif">
+            <img src="../assets/icons/user-profile.svg" alt="no-svg-icon-found" style="width: 37px;">
+            <p>Profile</p>
+          </a>
+          <a class="wallet" href="https://i.pinimg.com/originals/12/c8/00/12c800aaca044f40c1402d24b5dabfd8.gif">
+            <img src="../assets/icons/wallet.svg" alt="no-svg-icon-found" style="width: 37px;">
+            <p>Wallet</p>
+          </a>
+          <a class="membership" href="https://c.tenor.com/0-a4-czbTt8AAAAC/memes-dancing.gif">
+            <img src="../assets/icons/member.svg" alt="no-svg-icon-found" style="width: 37px;">
+            <p>Membership</p>
+          </a>
+          <a class="explore" href="https://i.pinimg.com/originals/f4/97/d5/f497d55088aba26d78c26958a636b97a.gif">
+            <img src="../assets/icons/explore.svg" alt="no-svg-icon-found" style="width: 36px;">
+            <p>Explore</p>
+          </a>
+          <a class="portfolio" href="https://i.pinimg.com/originals/71/6e/fd/716efd51a075569cecd5cd04def6aa53.gif">
+            <img src="../assets/icons/portfolio.svg" alt="no-svg-icon-found" style="width: 37px;">
+            <p>Portfolio</p>
+          </a>
+          <a class="blogs" href="https://c.tenor.com/ajqmcPCugRwAAAAM/dj-khaled-another-one.gif">
+            <img src="../assets/icons/blog.svg" alt="no-svg-icon-found" style="width: 43px;">
+            <p>Blogs</p>
+          </a>
+        </header>
+      {% endif %}
+    {% endblock %}
+
+    {% block content %}{% endblock %}
+
+    {% block footer %}
+      {% if not user.access %}
+        <footer>
+          <div class="copyright">
+            <p class="copy">Copyright © 2022, PixSalle</p>
+            <p>Arnau Metaute Carrillo</p>
+            <p>Wesley Lucas Mas</p>
+            <p>Marta Vilaseca Pol</p>
+          </div>
+          <div class="sitemap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d492.09544962535733!2d2.1614922432552968!3d41.414525926429654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2b66be93831%3A0x7421c699598ba265!2sDevinet%202013%2C%20S.L.U.!5e0!3m2!1sen!2ses!4v1650668735645!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Carrer de Vallseca, 8, 08024 Barcelona</p>
+          </div>
+          <div class="logo">
+            <p>PixSalle</p>
+          </div>
+          <div class="social-media">
+            <a href="https://www.youtube.com/watch?v=iik25wqIuFo" target="_blank"><img src="../assets/icons/instagram.svg" alt="no-svg-icon-found"></a>
+            <a href="https://www.youtube.com/watch?v=KnHmoA6Op1o" target="_blank"><img  src="../assets/icons/twitter.svg" alt="no-svg-icon-found"></a>
+            <a href="https://www.youtube.com/watch?v=2tRIjRVcHcQ" target="_blank"><img  src="../assets/icons/pinterest.svg" alt="no-svg-icon-found"></a>
+            <a href="https://www.youtube.com/watch?v=eSa2zL-luUI" target="_blank"><img  src="../assets/icons/tumblr.svg" alt="no-svg-icon-found"></a>
+          </div>
+        </footer>
+      {% endif %}
+    {% endblock %}
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{% extends "base.twig" %}
+
+{% block title %}Wallet | PixSalle{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="../assets/css/wallet.css"/>
+{% endblock %}
+
+{% block content %}
+  <div class="form-body">
+    <h1>Wallet</h1>
+    <div class="money-presentation">
+        <p class="user">User: {{ user['name'] }}</p>
+        <p class="amount">€ {{ user['money'] }}</p>
+    </div>
+    <form action="" method="POST">
+        <div class="money-amount">
+            <label for="quantity">Amount (€0 - €1000)</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="1000" step="10">
+        </div>
+        {% if user['money'] %}
+            <p class="error">{{ user['money'] }}</p>
+        {% endif %}
+        <input class="add" type="submit" value="Add to wallet">
+    </form>
+  </div>
+{% endblock %}

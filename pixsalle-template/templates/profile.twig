@@ -1,0 +1,50 @@
+{% extends "base.twig" %}
+
+{% block title %}Profile | PixSalle{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="assets/css/profile.css"/>
+{% endblock %}
+
+{% block content %}
+  <div class="form-body">
+    <h1>Profile Settings</h1>
+    <form action="" method="POST">
+        <div class="set">
+            <div class="set-1">
+                <div class="username-section">
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="{% if user.name %}{{ user.name }}{% endif %}">
+                </div>
+                <div class="email-section">
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="{% if user.email %}{{ user.email }}{% endif %}" readonly>
+                </div>
+            </div>
+            <div class="set-2">
+                <div class="phone-section">
+                    <label>Phone Number</label>
+                    <input type="tel" title="(e.g. [6XX XXX XXX] (w/o spaces) )" name="phone" placeholder="{% if user.phone %}{{ user.phone }}{% endif %}">
+                    {% if user['number'] %}
+                        <p class="error">{{ user['number'] }}</p>
+                    {% endif %}
+                </div>
+                <div class="photo-section">
+                    <label>Profile Picture</label>
+                    <label for="file-upload" class="custom-file-upload">
+                        <input id="file-upload" type="file" name="photo">
+                        <p>Upload photo...</p>
+                    </label>
+                    {% if user['photo'] %}
+                        <p class="error">{{ user['photo'] }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="buttons-section">
+            <input class="info-upd" type="submit" value="Update Info">
+            <p class="passw-option">Want to change your current password? <a href="sign-up">Click here!</a></p>
+        </div>
+    </form>
+  </div>
+{% endblock %}

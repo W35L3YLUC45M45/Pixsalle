@@ -1,0 +1,46 @@
+{% extends "base.twig" %}
+
+{% block title %}Sign-in | PixSalle{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" href="assets/css/sign-in.css"/>
+{% endblock %}
+
+{% block header %}
+{% endblock %}
+{% block subheader %}
+{% endblock %}
+
+{% block content %}
+  <video autoplay="" muted="" loop="" id="sign-in-bg-video">
+    <source src="assets/media/video/abandoned-train-station.mp4" type="video/mp4">
+  </video>
+  <div class="form-body">
+    <div class="title-body">
+      <h1>Welcome to PixSalle</h1>
+    </div>
+    <form data-cy="sign-in" action="" method="POST">
+      <div class="email-section">
+        <label>Email</label>
+        <input data-cy="sign-in__email" type="text" name="email" placeholder="Enter your email">
+        {% if formErrors['email'] %}
+          <p class="error" data-cy="sign-in__wrongEmail">{{ formErrors['email'] }}</p>
+        {% endif %}
+      </div>
+      <div class="password-section">
+        <label>Password</label>
+        <input data-cy="sign-in__password" type="password" name="password" placeholder="Enter your password">
+        {% if formErrors['password'] %}
+          <p class="error" data-cy="sign-in__wrongPassword">{{ formErrors['password'] }}</p>
+        {% endif %}
+      </div>
+      <div class="buttons-section">
+        <input data-cy="sign-in__btn" type="submit" value="Sign-in">
+        <p class="sign-in-option">Don't have an account? <a href="sign-up">Register here!</a></p>
+      </div>
+    </form>
+  </div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
