@@ -1,3 +1,10 @@
+![My Image](media-captures/sign-up.mp4)
+![My Image](media-captures/sign-in.mp4)
+![My Image](media-captures/hub.JPG)
+![My Image](media-captures/hub.JPG)
+![My Image](media-captures/hub.JPG)
+![My Image](media-captures/hub.JPG)
+![My Image](media-captures/hub.JPG)
 ![My Image](media-captures/hub.JPG)
 
 # PixSalle
