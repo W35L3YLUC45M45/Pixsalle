@@ -1,3 +1,5 @@
+Web Development project where the focus is to create a social media website that follows the same principles as other websites like Pinterest: post pictures, share them with friends, create and customize your own profile, communicate with other users through posts, etc... using PHP and Twig.
+
 ![My Image](media-captures/hub.JPG)
 
 https://user-images.githubusercontent.com/98887058/220635230-0954e2c2-fac5-4ea5-9814-d5e375b8120a.mp4
