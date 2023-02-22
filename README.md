@@ -1,3 +1,5 @@
+# PixSalle
+
 Web Development project where the focus is to create a social media website that follows the same principles as other websites like Pinterest: post pictures, share them with friends, create and customize your own profile, communicate with other users through posts, etc... using PHP and Twig.
 
 ![My Image](media-captures/hub.JPG)
@@ -23,7 +25,7 @@ https://user-images.githubusercontent.com/98887058/220635835-6c97387b-a128-4c08-
 ![My Image](media-captures/blog-write.JPG)
 
 
-# PixSalle
+## Context
 
 The Student Council of La Salle saw that a lot of students are passionate about photography. They have posted their
 amazing photos on various social media accounts. To help the students develop their skills and inspire them to be
