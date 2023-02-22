@@ -1,4 +1,4 @@
-![My Image](../media-captures/hub.jpg)
+![My Image](media-captures/hub.JPG)
 
 # PixSalle
 
