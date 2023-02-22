@@ -1,11 +1,20 @@
-![Watch the video](media-captures/sign-up.mp4)
-![My Image](media-captures/sign-in.mp4)
+https://user-images.githubusercontent.com/98887058/220635230-0954e2c2-fac5-4ea5-9814-d5e375b8120a.mp4
+https://user-images.githubusercontent.com/98887058/220635266-8ae2af3f-6945-4b4e-9770-4a68818f4b20.mp4
 ![My Image](media-captures/hub.JPG)
-![My Image](media-captures/hub.JPG)
-![My Image](media-captures/hub.JPG)
-![My Image](media-captures/hub.JPG)
-![My Image](media-captures/hub.JPG)
-![My Image](media-captures/hub.JPG)
+https://user-images.githubusercontent.com/98887058/220635700-98ea52bd-0538-43de-8e2a-225f77df751e.mp4
+https://user-images.githubusercontent.com/98887058/220635835-6c97387b-a128-4c08-9609-dd2dfe9210ba.mp4
+![My Image](media-captures/password-reset.JPG)
+![My Image](media-captures/membership.JPG)
+![My Image](media-captures/wallet.JPG)
+![My Image](media-captures/qr-generation.JPG)
+![My Image](media-captures/portfolio-title.JPG)
+![My Image](media-captures/inside-portfolio.JPG)
+![My Image](media-captures/album.JPG)
+![My Image](media-captures/portfolio-single-album.JPG)
+![My Image](media-captures/portfolio-multiple-albums.JPG)
+![My Image](media-captures/blog.JPG)
+![My Image](media-captures/blog-write.JPG)
+
 
 # PixSalle
 
